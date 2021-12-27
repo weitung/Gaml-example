@@ -1,7 +1,7 @@
 import time
-from src.actions import *
-from src._gamlmodule import GamlModule
-from src._gamlprimitives import GamlId
+from actions import *
+from Gaml._gamlmodule import GamlModule
+from Gaml._gamlprimitives import GamlId
 
 class AnpShuttle(GamlModule):
 	"""

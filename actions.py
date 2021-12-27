@@ -4,12 +4,12 @@ import json
 
 # Import the ROS related imports only in production mode
 # if not "unittest" in sys.modules.keys():
-import rospy
-from central_control.srv import *
+# import rospy
+# from central_control.srv import *
 
-from src._gamlaction import GamlAction
-from src._gamlprimitives import GamlState
-from hibotlib.hibot_client import *
+from Gaml._gamlaction import GamlAction
+from Gaml._gamlprimitives import GamlState
+from Gaml.hibot_client import *
 
 def move_and_check(hibot_client, motor_list, target_position, speed, accel, decel, block=True, timeout=60, tol=0.07):
 	def check_list_len():
